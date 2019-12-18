@@ -15,13 +15,23 @@ var insertKm = parseInt(prompt('Quanti km vuoi percorrere?'));
 console.log(insertKm);
 
 //inserire nome e cognome
-var nome = prompt('Inserire nome e cognome')
-console.log(nome);
+var name = prompt('Inserire nome e cognome')
+console.log(name);
 
 //inserire età
-var età = parseInt(prompt('Quanti anni hai?'));
-console.log(età);
+var age = parseInt(prompt('Quanti anni hai?'));
+console.log(age);
 
 //prezzo biglietto intero
 var ticketPrice = insertKm * 0.21;
 console.log(ticketPrice + '0€');
+
+//calcolo prezzo in base all'età
+if (age < 18) {
+  console.log(ticketPrice - ((ticketPrice * 20) / 100) + '0€');
+
+} else if (age > 65) {
+  console.log(ticketPrice - ((ticketPrice * 40) / 100) + '0€');
+} else {
+  console.log(ticketPrice);
+}
