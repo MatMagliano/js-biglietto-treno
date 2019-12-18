@@ -11,5 +11,9 @@ alert('hello')
 
 
 //inserire chilometri da percorrere
-var inserireKm = parseInt(prompt('Quanti km vuoi percorrere?'));
-console.log(inserireKm);
+var insertKm = parseInt(prompt('Quanti km vuoi percorrere?'));
+console.log(insertKm);
+
+//prezzo biglietto intero
+var ticketPrice = insertKm * 0.21;
+console.log(ticketPrice);
