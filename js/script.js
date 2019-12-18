@@ -14,6 +14,14 @@ alert('hello')
 var insertKm = parseInt(prompt('Quanti km vuoi percorrere?'));
 console.log(insertKm);
 
+//inserire nome e cognome
+var nome = prompt('Inserire nome e cognome')
+console.log(nome);
+
+//inserire età
+var età = parseInt(prompt('Quanti anni hai?'));
+console.log(età);
+
 //prezzo biglietto intero
 var ticketPrice = insertKm * 0.21;
-console.log(ticketPrice);
+console.log(ticketPrice + '0€');
